@@ -313,6 +313,10 @@ function ListItem(ticket) {
   );
 }
 function UserIcon(username) {
+  if(GroupingBy === 'Users'){
+    return (<></>);
+  }
+
   var l = userIdName[username.data].split(' ');
   var txt = l[0].charAt(0).toUpperCase();
   var available = 'unavailable';
@@ -366,10 +370,17 @@ function StatusIcon(status, compulsary) {
       </div>
     );
   }
-  else {
+  else if (status.data === "Done") {
     return (
       <div className='status-icon'>
         <img width="24" height="24" src="https://img.icons8.com/ultraviolet/24/000000/checked--v1.png" alt="checked--v1" />
+      </div>
+    );
+  }
+  else {
+    return (
+      <div className='status-icon'>
+        <img width="24" height="24" src="https://img.icons8.com/office/30/cancel.png" alt="cancel"/>
       </div>
     );
   }
