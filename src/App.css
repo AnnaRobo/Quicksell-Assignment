@@ -1,0 +1,191 @@
+.App {
+  text-align: center;
+  background-color: rgb(229, 229, 229);
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+}
+
+.App-header {
+  background-color: white;
+  height: 6vh;
+  width: 100%;
+  display: flex;
+  padding: 5px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  color: black;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.mainBody {
+  overflow-x: scroll;
+  overflow-y: scroll;
+  position: relative;
+  height: 93vh;
+  width: 100%;
+  margin-top: 7vh;
+  margin-bottom: 10vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.vertical-list {
+  margin: 15px;
+}
+
+.card {
+  width: 300px; /* Adjust the width as needed */
+  padding: 15px;
+  margin: 8px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.listtitle {
+  width: 300px;
+  margin: 10px;
+  padding-left: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.id {
+  color: #474747;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.title {
+  color: black;
+  font-size: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.tag {
+  border: 1px solid rgb(200, 200, 200);
+  padding: 5px;
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-right: 10px;
+  display: inline-flex;
+  color: rgb(130, 130, 130);
+  align-items: center;
+  font-size: 14px;
+}
+.tag .icon {
+  width: 12px; 
+  height: 12px;
+  background-color: rgb(200, 200, 200);
+  border-radius: 50%; 
+  margin-left: 1px;
+  margin-right: 5px;
+  display: inline-block;
+}
+.square-div{
+  padding-left: 9px;
+  padding-right: 9px;
+  height: 100%;
+}
+.invisible {
+  display: none;
+}
+
+
+.name-icon {
+  align-self: flex-end;
+  width: 24px;
+  height: 24px;
+  font-size: 12px;    
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  position: absolute;
+}
+.available {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: green;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.unavailable {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.status-icon {
+  width: 24px;
+  height: 24px;
+  font-size: 12px;    
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-weight: bold;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.todo{
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+
+.filter {
+  position: fixed;
+  background-color: rgb(241, 241, 241);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  color: black;
+  font-weight: 500;
+  align-items: flex-start;
+  border: 1px solid rgb(220, 204, 204);
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 10px;
+  top: 7vh;
+}
+
+.selector {
+  width: 50%;
+  font-size: 16px;
+  padding: 4px;
+}
